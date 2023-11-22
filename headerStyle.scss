@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    padding: 1rem 3rem 0.2rem;
+    justify-content: space-between;
+    align-items: baseline;
+    position: sticky;
+    top: 0;
+    &__burger {
+        width: 1.2rem;
+        position: relative;
+        cursor: pointer;
+        fill: var(--cream);
+    }
+    &__checkbox {
+        display: none; 
+        &:checked {
+            +.header__nav {
+                transform: translateX(0);
+            }
+        }
+    }
+    &__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--blue);
+        width: max-content;
+        height: 100%;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        transform: translateX(-180px);
+        transition: transform 0.6s ease-in-out;
+        &__list {
+            list-style: none; 
+            padding: 0;
+            &__item {
+                &__link {
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: var(--cream);
+                    display: block;
+                    &:hover {
+                        background-color:var(--lightBlue);
+                    }
+                }
+            }
+        }
+    }
+    &__title {
+        text-transform: capitalize;
+        font-size: 1.7rem;
+    }
+} 
+
+
+
+

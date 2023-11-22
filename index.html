@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity tracker homepage</title>
+    <link rel="stylesheet" href="dist/basicStyle.css"/>
+    <link rel="stylesheet" href="dist/headerStyle.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+</head>
+<body>
+    <header class="header">
+        <label for="menu" role="button">
+            <svg class="header__burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg> 
+        </label>
+        <input class="header__checkbox" type="checkbox" id="menu">
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item"><label class="header__nav__list__item__link" for="menu" role="button">close menu</label></li>
+                <li class="header__nav__list__item"><a class="header__nav__list__item__link" href="myActivities.html">my activities</a></li>
+                <li class="header__nav__list__item"><a class="header__nav__list__item__link" href="index.html">my statistist</a></li>
+            </ul>
+        </nav>
+        <h1 class="header__title">my activity tracker</h1>
+        <h3 id="greetings">hello</h3>
+    </header>
+    <main>
+    </main>
+    <script type="module" src="dist/homepage.js"></script>
+</body>
+</html>

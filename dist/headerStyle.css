@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  padding: 1rem 3rem 0.2rem;
+  justify-content: space-between;
+  align-items: baseline;
+  position: sticky;
+  top: 0;
+}
+.header__burger {
+  width: 1.2rem;
+  position: relative;
+  cursor: pointer;
+  fill: var(--cream);
+}
+.header__checkbox {
+  display: none;
+}
+.header__checkbox:checked + .header__nav {
+  transform: translateX(0);
+}
+.header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--blue);
+  width: max-content;
+  height: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  transform: translateX(-180px);
+  transition: transform 0.6s ease-in-out;
+}
+.header__nav__list {
+  list-style: none;
+  padding: 0;
+}
+.header__nav__list__item__link {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--cream);
+  display: block;
+}
+.header__nav__list__item__link:hover {
+  background-color: var(--lightBlue);
+}
+.header__title {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}

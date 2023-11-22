@@ -1,0 +1,37 @@
+.main {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+* {
+  line-height: 2;
+}
+
+.btn {
+  display: block;
+  margin-inline: auto;
+  margin-top: 2rem;
+  font-family: inherit;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--cream);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 6px 6px 3px 1px var(--lightOrange);
+}
+.btn:hover {
+  font-size: 1rem;
+}
+.btn:active {
+  padding: 0.5rem 1.9rem;
+}
+
+div {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+div input {
+  flex: 1;
+}

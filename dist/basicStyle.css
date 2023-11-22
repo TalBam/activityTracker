@@ -1,0 +1,28 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 1rem;
+  line-height: 1.2;
+  height: 100%;
+}
+
+body {
+  font-family: "karma", sans-serif;
+  height: inherit;
+  color: var(--cream);
+  background-color: var(--blue);
+}
+
+:root {
+  --blue: rgb(44, 44, 142);
+  --lightBlue: rgb(126, 126, 183);
+  --orange: rgb(255, 141, 109);
+  --lightOrange: rgb(255, 170, 147);
+  --cream:rgb(255, 241, 241);
+}

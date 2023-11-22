@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="dist/basicStyle.css"/>
+    <link rel="stylesheet" href="dist/loginStyle.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+</head>
+<body class="login">
+    <header class="login__header">
+        <h1 class="login__header__title">my activity tracker</h1>
+    </header>
+    <main class="login__main">
+        <form id="loginForm" class="login__form" name="log-in">
+            <h3>get in your account</h3>
+            <div>
+                <label for="userName">user name</label>
+                <input type="text" id="userName">
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="text" id="password">
+            </div>
+            <button class="login__form__button" type="submit">log in</button>
+            <p id="errorMessage"></p>
+        </form>
+        <p>don't have an account? <a class="login__link" href="signIn.html">sign in</a></p>
+    </main>
+    <script type="module" src="dist/logSignIn.js"></script>
+</body>
+</html>
